@@ -23,4 +23,8 @@ public class CandidateService {
         return candidateRepository.save(candidate);
     }
 
+    public void deleteCandidate(Integer id) {
+        candidateRepository.deleteById(id);
+    }
+
 }
